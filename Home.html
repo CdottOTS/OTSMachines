@@ -18,8 +18,25 @@
         }
     </style>
 </head>
+
+    
 <body>
     <h1>Welcome</h1>
-    <p>This is a simple HTML site with a blue and black background.</p>
+    <p>Keys must get registered</p>
+</body>
+</html>
+
+
+
+   <input type="text" id="copyText" value="Hello, World!" readonly>
+    <button id="copyButton" onclick="copyText()">Copy to Clipboard</button>
+    <script>
+        function copyText() {
+            var copyText = document.getElementById("copyText");
+            copyText.select();
+            document.execCommand("copy");
+            alert("Copied the text: " + copyText.value);
+        }
+    </script>
 </body>
 </html>
