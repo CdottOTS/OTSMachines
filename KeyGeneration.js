@@ -5,3 +5,4 @@ var random_letter = letters.charAt(Math.floor(Math.random() * letters.length));
 var Starter = "OTS/"
 var Key = ""+ Starter + "" + Code + "" + random_letter + " "
 console.log(Key)
+OTS/36254021667869470J 
