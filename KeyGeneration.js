@@ -6,5 +6,5 @@ var Starter = "OTS/"
 var Key = ""+ Starter + "" + Code + "" + random_letter + " "
 console.log(Key)
 document.getElementById("copyText").value = Key
-conssole.log("key has ben made and set ")
+console.log("key has ben made and set ")
 console.log("why are you on the dev console on my site dont try no funny shit - ots")
