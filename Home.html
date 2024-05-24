@@ -1,30 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-
-    <body>
-        <div class="toolbar">
-            <span class="toolbar-item">Home</span>
-            <span class="toolbar-item">Register</span>
-            <span class="toolbar-item">Scripts</span>
-            <span class="toolbar-item">Contact</span>
-        </div>
-
-    
-    </body>
-
-    </html>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +13,6 @@
             text-align: center;
             font-family: Arial, sans-serif;
         }
-
         h1 {
             color: blue;
         }
@@ -48,47 +24,17 @@
     <h1>Welcome</h1>
     <p>Keys must get registered</p>
 </body>
-
 </html>
+   
+                <html>
+   <input type="text" id="copyText" value= Key readonly>
+    <button id="copyButton" onclick="send()">register</button>
+                </html>
 
-<html>
-
-<input type="text" id="copyText" value="Key" readonly>
-<input type="text" id="copyText2" value="Pending..." readonly>
 
 <script>
-
-    document.getElementById("copyText").style.color = "red";
-    javascript: (function () {window.s0 = document.createElement('script'); window.s0.setAttribute('type', 'text/javascript'); window.s0.setAttribute('src', 'https://cdn.jsdelivr.net/gh/CdottOTS/OTSMachines/KeyGeneration.js'); document.getElementsByTagName('body')[0].appendChild(window.s0);})();
-    document.getElementById("copyText").style.color = "red";
-    javascript: (function () {window.s0 = document.createElement('script'); window.s0.setAttribute('type', 'text/javascript'); window.s0.setAttribute('src', 'https://cdn.jsdelivr.net/gh/CdottOTS/OTSMachines/MainUpdate.js'); document.getElementsByTagName('body')[0].appendChild(window.s0);})();
-    document.getElementById("copyText").style.color = "red";
-    function getCookieValue(cookieName) {
-        var name = cookieName + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var cookieArray = decodedCookie.split(';');
-        for (var i = 0; i < cookieArray.length; i++) {
-            var cookie = cookieArray[i].trim();
-            if (cookie.indexOf(name) == 0) {
-                return cookie.substring(name.length, cookie.length);
-            }
-        }
-        return "";
-    }
-    var codeValue = getCookieValue("code");
-    var OG = codeValue
-    Accept = function myfunction() {
-        document.getElementById("copyText2").value = "Verified"
-        document.getElementById("copyText2").style.color = "Green";
-    }
-    var Pend = function myfunciton() {
-        document.getElementById("copyText2").style.color = "red";
-        document.getElementById("copyText").style.color = "red";
-    }
-    if (codeValue == "OTS/62445480095714830S") {
-        Accept()
-    } else Pend()
-</script>
+        javascript:(function(){window.s0=document.createElement('script');window.s0.setAttribute('type','text/javascript');window.s0.setAttribute('src','https://cdn.jsdelivr.net/gh/CdottOTS/OTSMachines/KeyGeneration.js');document.getElementsByTagName('body')[0].appendChild(window.s0);})();
+    javascript:(function(){window.s0=document.createElement('script');window.s0.setAttribute('type','text/javascript');window.s0.setAttribute('src','https://cdn.jsdelivr.net/gh/CdottOTS/OTSMachines/MainUpdate.js');document.getElementsByTagName('body')[0].appendChild(window.s0);})();
+    </script>
 </body>
-
 </html>
