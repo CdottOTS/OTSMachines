@@ -7,6 +7,8 @@
   <script src="server.js"></script>
 <head>
     <script>
+       
+const delay = ms => new Promise(res => setTimeout(res, ms))
        var cookie = document.cookie;
 // Check if the cookie contains the key with value "true"
 if (cookie.includes("WasHere=true")) {
