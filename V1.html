@@ -20,6 +20,7 @@ if (cookie.includes("WasHere=true")) {
          var pw = document.getElementById("password").value
        var user = document.getElementById("username").value
        var Run = function myfunction(){
+          var cookie = document.cookie;
             document.cookie = "WasHere=true"
           document.cookie = "user1=" + user + ""
           document.cookie = "pw1=" + pw + ""
