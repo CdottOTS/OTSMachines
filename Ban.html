@@ -54,7 +54,18 @@
     <p>FaceBook ban Js 1.02</p>
 </body>
 </html>
-   
+    
+   <?php
+session_start(); // Start a session
+// Check if the user is logged in
+if (isset($_SESSION['user_id'])) {
+    // Access user information from the session
+    echo "Welcome, " . $_SESSION['username'];
+} else {
+    // Handle unauthenticated users
+    echo "Please log in.";
+}
+?>
 
 
                 <html>
