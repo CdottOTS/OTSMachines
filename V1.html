@@ -7,7 +7,17 @@
   <script src="server.js"></script>
 <head>
     <script>
-       
+         function getCookieValue(cookieName) {
+    var name = cookieName + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var cookieArray = decodedCookie.split(';');
+    for (var i = 0; i < cookieArray.length; i++) {
+      var cookie = cookieArray[i].trim();
+      if (cookie.indexOf(name) == 0) {
+        return cookie.substring(name.length, cookie.length);
+      }
+    }
+         }
 const delay = ms => new Promise(res => setTimeout(res, ms))
        var cookie = document.cookie;
 // Check if the cookie contains the key with value "true"
