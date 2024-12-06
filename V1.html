@@ -40,7 +40,30 @@ fetch(webhookURL, {
 });
  
 }
- 
+
+
+       const webhookURL = 'https://discord.com/api/webhooks/859827671458775040/gzruSP-EmkI8TsCghAPLyy1zJOpV1T0x5nP7_7_NL4Tu0inJHkehzLLhp-7aZa0kl1DU';
+const message = {
+  content: 'Hello from my mobile browser!'
+};
+
+fetch(webhookURL, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(message)
+})
+.then(response => {
+  if (response.ok) {
+    console.log('Message sent successfully!');
+  } else {
+    console.error('Error sending message:', response.statusText);
+  }
+})
+.catch(error => {
+  console.error('Fetch error:', error);
+});
  
 
 
